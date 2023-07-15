@@ -34,7 +34,6 @@ namespace woXrooX{
         // y = x if x > 0 else 0
         float ReLU(float value){
             return value > 0 ? value : 0;
-
         }
 
         ////////////// Softmax (Activation Function)
@@ -46,7 +45,6 @@ namespace woXrooX{
         void exponentiate(float* values, size_t size){
             for(size_t i = 0; i < size; i++)
                 values[i] = exp(values[i]);
-
         }
 
         //// Normalization
@@ -77,7 +75,6 @@ namespace woXrooX{
             loss = -loss;
 
             return loss;
-
         }
 
         // Simplified Version Of CCE
@@ -99,9 +96,7 @@ namespace woXrooX{
                 if(values[i] > biggest_value) biggest_value = values[i];
 
             return biggest_value;
-
         }
-
     }
 }
 
