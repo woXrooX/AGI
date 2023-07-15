@@ -5,7 +5,7 @@
 #include <random>
 #include <ctime>
 
-#include "math/math.hpp"
+#include "math.hpp"
 
 namespace woXrooX{
     class Layer{

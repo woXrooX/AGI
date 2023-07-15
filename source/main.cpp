@@ -1,7 +1,6 @@
 #include <iostream>
 
-#include "helpers.hpp"
-#include "layer.hpp"
+#include "neural_network/layer.hpp"
 
 int main(int argc, char const *argv[]){
 
