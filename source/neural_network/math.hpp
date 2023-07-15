@@ -30,7 +30,7 @@ namespace woXrooX{
 
         }
 
-        ////////////// ReLU (Activation Function)
+        ////////////// ReLU (Rectified Linear Unit) (Activation Function)
         // y = x if x > 0 else 0
         float ReLU(float value){
             return value > 0 ? value : 0;
