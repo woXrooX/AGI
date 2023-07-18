@@ -1,2 +1,2 @@
 # AGI
-Trying yo understand how AI works
+Trying to understand the universe!
