@@ -113,16 +113,15 @@ namespace woXrooX{
         }
 
         void calcLoss(){
-            this->loss = math::loss(math::max(this->outputs, this->output_size));
-
+            this->loss = math::loss(
+                math::max(this->outputs, this->output_size)
+            );
         }
 
         //////////////// Setters
 
 
     private:
-
-
         void genWeights(){
             this->weights = new float*[this->output_size];
 
@@ -151,12 +150,7 @@ namespace woXrooX{
             float max = 1.0;
             float min = -1.0;
 
-            float res = ((float(rand()) / float(RAND_MAX)) * (max - min)) + min;
-
-            // std::cout << "Random: " << res << '\n';
-
-            return res;
-
+            return ((float(rand()) / float(RAND_MAX)) * (max - min)) + min;;
         }
 
         void calcOutputs(){
@@ -165,9 +159,9 @@ namespace woXrooX{
             for(size_t i = 0; i < this->output_size; i++)
                 this->outputs[i] =
                     math::ReLU(
-                        math::dot_product(this->inputs, this->weights[i], this->input_size) + this->biases[i]
+                        math::dot_product(this->inputs, this->weights[i], this->input_size) +
+                        this->biases[i]
                     );
-
         }
 
         //////////////// Variables

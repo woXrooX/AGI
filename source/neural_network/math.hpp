@@ -85,7 +85,6 @@ namespace woXrooX{
             return -std::log(
                 clip(value, 0.0000001, 0.9999999)
             );
-
         }
 
         ////////////// Max
