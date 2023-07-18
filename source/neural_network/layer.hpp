@@ -21,10 +21,6 @@ namespace woXrooX{
             // Seed fir randomizing
             srand(time(NULL));
 
-            // Softmax activation should be done on output layer
-            // math::exponentiate(this->inputs, this->input_size);
-            // math::normalize(this->inputs, this->input_size);
-
             this->genWeights();
             this->genBiases();
 
