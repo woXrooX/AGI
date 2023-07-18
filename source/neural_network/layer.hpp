@@ -10,7 +10,7 @@
 namespace woXrooX{
     class Layer{
     public:
-        // First Layer
+        // Input Layer
         Layer(size_t input_size, size_t output_size, float* X) :
             input_size(input_size),
             output_size(output_size),
