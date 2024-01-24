@@ -4,14 +4,26 @@
 
 int main(int argc, char const *argv[]){
 
-    const size_t INPUTS_SIZE = 4;
-    const size_t OUTPUT_NEURONS_SIZE = 3;
+    // const size_t INPUTS_SIZE = 4;
+    // const size_t OUTPUT_NEURONS_SIZE = 3;
 
-    float* X = new float[INPUTS_SIZE];
-    X[0] = 4.8;
-    X[1] = 1.21;
-    X[2] = 2.385;
-    X[3] = 0;
+    // float* X = new float[INPUTS_SIZE];
+    // X[0] = 4.8;
+    // X[1] = 1.21;
+    // X[2] = 2.385;
+    // X[3] = 0;
+
+    const size_t INPUTS_SIZE = 2;
+    const size_t OUTPUT_NEURONS_SIZE = 2;
+
+    // Sleeping vs studying
+    float* X = new float[2];
+    X[0] = 2;
+    X[1] = 9;
+
+    float* y = new float[2];
+    y[0] = 1.0;
+    y[1] = 0.0;
 
     /////// Input Layer
     woXrooX::Layer input_layer(INPUTS_SIZE, OUTPUT_NEURONS_SIZE, X);

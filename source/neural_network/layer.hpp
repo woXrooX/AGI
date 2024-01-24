@@ -61,6 +61,9 @@ namespace woXrooX{
 
         }
 
+        void backward(){
+        }
+
         //////////////// Helpers
         void info(){
             std::cout << "==================================== Layer ID: " << this->id << " ====================================" << "\n";
